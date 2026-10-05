@@ -19,9 +19,16 @@
             <li><a href="#education">Education</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle Theme">
+        <i class="fa-solid fa-moon"></i>
+        </button>
     </nav>
 
     <header>
+        <div class="status-badge">
+        <span class="status-dot"></span> Available for Hiring / Internships
+    </div>
         <h1>Moin Khan Pathan</h1>
         <p>Front End Engineering fresher | HTML, CSS, JS</p>
         <div class="social-links">
@@ -75,6 +82,12 @@
 
         <section id="projects">
             <h2>Projects</h2>
+
+            <div class="project-filters">
+             <button class="filter-btn active" data-filter="all">All</button>
+             <button class="filter-btn" data-filter="javascript">JavaScript</button>
+             <button class="filter-btn" data-filter="php">PHP</button>
+             </div>
             
             <!-- Project 1: Tic-Tac-Toe -->
             <article>
@@ -87,10 +100,10 @@
                     <div class="project-slider">
                         <button class="slider-btn prev-btn" aria-label="Previous">&#10094;</button>
                         <div class="slider-track">
-                            <img src="tictactoe.png" alt="Tic Tac Toe Board" class="slide active">
-                            <img src="tictactoe2.png" alt="Tic Tac Toe Win Screen" class="slide">
-                            <img src="tictactoe3.png" alt="Tic Tac Toe Win Screen" class="slide">
-                            <img src="tictactoe4.png" alt="Tic Tac Toe Win Screen" class="slide">
+                            <img src="assets/tictactoe.png" alt="Tic Tac Toe Board" class="slide active">
+                            <img src="assets/tictactoe2.png" alt="Tic Tac Toe Win Screen" class="slide">
+                            <img src="assets/tictactoe3.png" alt="Tic Tac Toe Win Screen" class="slide">
+                            <img src="assets/tictactoe4.png" alt="Tic Tac Toe Win Screen" class="slide">
                         </div>
                         <button class="slider-btn next-btn" aria-label="Next">&#10095;</button>
                     </div>
@@ -116,10 +129,10 @@
                     <div class="project-slider">
                         <button class="slider-btn prev-btn" aria-label="Previous">&#10094;</button>
                         <div class="slider-track">
-                            <img src="rockpaper-1.png" alt="Rock Paper Scissors Gameplay" class="slide active">
-                            <img src="rockpaper-2.png" alt="Score Board View" class="slide">
-                            <img src="rockpaper-3.png" alt="Score Board View" class="slide">
-                            <img src="rockpaper-4.png" alt="Score Board View" class="slide">
+                            <img src="assets/rockpaper-1.png" alt="Rock Paper Scissors Gameplay" class="slide active">
+                            <img src="assets/rockpaper-2.png" alt="Score Board View" class="slide">
+                            <img src="assets/rockpaper-3.png" alt="Score Board View" class="slide">
+                            <img src="assets/rockpaper-4.png" alt="Score Board View" class="slide">
                         </div>
                         <button class="slider-btn next-btn" aria-label="Next">&#10095;</button>
                     </div>
@@ -145,10 +158,10 @@
                     <div class="project-slider">
                         <button class="slider-btn prev-btn" aria-label="Previous">&#10094;</button>
                         <div class="slider-track">
-                            <img src="myntra-1.png" alt="Myntra Desktop View" class="slide active">
-                            <img src="myntra-2.png" alt="Myntra Mobile View" class="slide">
-                            <img src="myntra-3.png" alt="Myntra Mobile View" class="slide">
-                            <img src="myntra-4.png" alt="Myntra Mobile View" class="slide">
+                            <img src="assets/myntra-1.png" alt="Myntra Desktop View" class="slide active">
+                            <img src="assets/myntra-2.png" alt="Myntra Mobile View" class="slide">
+                            <img src="assets/myntra-3.png" alt="Myntra Mobile View" class="slide">
+                            <img src="assets/myntra-4.png" alt="Myntra Mobile View" class="slide">
                         </div>
                         <button class="slider-btn next-btn" aria-label="Next">&#10095;</button>
                     </div>
@@ -174,29 +187,29 @@
                     <div class="project-slider">
                         <button class="slider-btn prev-btn" aria-label="Previous">&#10094;</button>
                         <div class="slider-track">
-                            <img src="hotel-1.png" alt="Hotel Booking Homepage" class="slide active">
-                            <img src="hotel-2.png" alt="Admin Dashboard View" class="slide">
-                            <img src="hotel-3.png" alt="Room Reservation Form" class="slide">
-                            <img src="hotel-4.png" alt="Room Reservation Form" class="slide">
-                            <img src="hotel-5.png" alt="Room Reservation Form" class="slide">
-                            <img src="hotel-6.png" alt="Room Reservation Form" class="slide">
-                            <img src="hotel-7.png" alt="Room Reservation Form" class="slide">
-                            <img src="hotel-9.png" alt="Room Reservation Form" class="slide">
-                            <img src="hotel-10.png" alt="Room Reservation Form" class="slide">
-                            <img src="hotel-11.png" alt="Room Reservation Form" class="slide">
-                            <img src="hotel-12.png" alt="Room Reservation Form" class="slide">
-                            <img src="hotel-13.png" alt="Room Reservation Form" class="slide">
-                            <img src="hotel-14.png" alt="Room Reservation Form" class="slide">
-                            <img src="hotel-15.png" alt="Room Reservation Form" class="slide">
-                            <img src="hotel-16.png" alt="Room Reservation Form" class="slide">
-                            <img src="hotel-17.png" alt="Room Reservation Form" class="slide">
-                            <img src="hotel-18.png" alt="Room Reservation Form" class="slide">
-                            <img src="hotel-19.png" alt="Room Reservation Form" class="slide">
-                            <img src="hotel-20.png" alt="Room Reservation Form" class="slide">
-                            <img src="hotel-21.png" alt="Room Reservation Form" class="slide">
-                            <img src="hotel-22.png" alt="Room Reservation Form" class="slide">
-                            <img src="hotel-23.png" alt="Room Reservation Form" class="slide">
-                            <img src="hotel-24.png" alt="Room Reservation Form" class="slide">
+                            <img src="assets/hotel-1.png" alt="Hotel Booking Homepage" class="slide active">
+                            <img src="assets/hotel-2.png" alt="Admin Dashboard View" class="slide">
+                            <img src="assets/hotel-3.png" alt="Room Reservation Form" class="slide">
+                            <img src="assets/hotel-4.png" alt="Room Reservation Form" class="slide">
+                            <img src="assets/hotel-5.png" alt="Room Reservation Form" class="slide">
+                            <img src="assets/hotel-6.png" alt="Room Reservation Form" class="slide">
+                            <img src="assets/hotel-7.png" alt="Room Reservation Form" class="slide">
+                            <img src="assets/hotel-9.png" alt="Room Reservation Form" class="slide">
+                            <img src="assets/hotel-10.png" alt="Room Reservation Form" class="slide">
+                            <img src="assets/hotel-11.png" alt="Room Reservation Form" class="slide">
+                            <img src="assets/hotel-12.png" alt="Room Reservation Form" class="slide">
+                            <img src="assets/hotel-13.png" alt="Room Reservation Form" class="slide">
+                            <img src="assets/hotel-14.png" alt="Room Reservation Form" class="slide">
+                            <img src="assets/hotel-15.png" alt="Room Reservation Form" class="slide">
+                            <img src="assets/hotel-16.png" alt="Room Reservation Form" class="slide">
+                            <img src="assets/hotel-17.png" alt="Room Reservation Form" class="slide">
+                            <img src="assets/hotel-18.png" alt="Room Reservation Form" class="slide">
+                            <img src="assets/hotel-19.png" alt="Room Reservation Form" class="slide">
+                            <img src="assets/hotel-20.png" alt="Room Reservation Form" class="slide">
+                            <img src="assets/hotel-21.png" alt="Room Reservation Form" class="slide">
+                            <img src="assets/hotel-22.png" alt="Room Reservation Form" class="slide">
+                            <img src="assets/hotel-23.png" alt="Room Reservation Form" class="slide">
+                            <img src="assets/hotel-24.png" alt="Room Reservation Form" class="slide">
                         </div>
                         <button class="slider-btn next-btn" aria-label="Next">&#10095;</button>
                     </div>

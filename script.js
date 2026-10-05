@@ -37,9 +37,6 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // ==========================================
-    // 2. Project Image Slider Functionality
-    // ==========================================
     const sliders = document.querySelectorAll(".project-slider");
 
     sliders.forEach((slider) => {
@@ -72,5 +69,51 @@ document.addEventListener("DOMContentLoaded", () => {
                 showSlide(currentIndex);
             });
         }
+    });
+});
+
+// Dark Mode Toggle Logic
+const themeToggleBtn = document.getElementById("theme-toggle");
+const currentTheme = localStorage.getItem("theme");
+
+if (currentTheme === "dark") {
+    document.body.classList.add("dark-theme");
+    themeToggleBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
+}
+
+themeToggleBtn.addEventListener("click", () => {
+    document.body.classList.toggle("dark-theme");
+    let theme = "light";
+    
+    if (document.body.classList.contains("dark-theme")) {
+        theme = "dark";
+        themeToggleBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
+    } else {
+        themeToggleBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
+    }
+    
+    localStorage.setItem("theme", theme);
+});
+
+// Project Filtering Logic
+const filterBtns = document.querySelectorAll(".filter-btn");
+const projectCards = document.querySelectorAll("#projects article");
+
+filterBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+        filterBtns.forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+
+        const filterValue = btn.getAttribute("data-filter");
+
+        projectCards.forEach((card) => {
+            const tags = Array.from(card.querySelectorAll("ul li")).map(li => li.textContent.toLowerCase());
+            
+            if (filterValue === "all" || tags.includes(filterValue)) {
+                card.classList.remove("hide");
+            } else {
+                card.classList.add("hide");
+            }
+        });
     });
 });
